@@ -1,0 +1,2612 @@
+{
+ "ticker": "SYNTH",
+ "company_name": "SYNTH Corp (synthetic demo data, not a real company)",
+ "cik": "0000000001",
+ "analysis_years": [
+  2016,
+  2017,
+  2018,
+  2019,
+  2020
+ ],
+ "focus_year": 2020,
+ "as_of": "2021-03-01",
+ "analysis_timestamp": "2021-03-01T00:00:00+00:00",
+ "annual_facts": {
+  "note": "omitted from UI fixture (large)"
+ },
+ "filing_texts": {},
+ "filing_metadata": {
+  "2015": {
+   "auditor": "Alpha Audit LLP",
+   "cfo": "Pat Quinn",
+   "ceo": "Sam Rivers",
+   "audit_fees": 1000000.0,
+   "related_party_chars": 2000,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  },
+  "2016": {
+   "auditor": "Alpha Audit LLP",
+   "cfo": "Pat Quinn",
+   "ceo": "Sam Rivers",
+   "audit_fees": 1050000.0,
+   "related_party_chars": 2100,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  },
+  "2017": {
+   "auditor": "Alpha Audit LLP",
+   "cfo": "Pat Quinn",
+   "ceo": "Sam Rivers",
+   "audit_fees": 1100000.0,
+   "related_party_chars": 2200,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  },
+  "2018": {
+   "auditor": "Alpha Audit LLP",
+   "cfo": "Lee Moran",
+   "ceo": "Sam Rivers",
+   "audit_fees": 1500000.0,
+   "related_party_chars": 4000,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  },
+  "2019": {
+   "auditor": "Beta Partners LLP",
+   "cfo": "Lee Moran",
+   "ceo": "Sam Rivers",
+   "audit_fees": 2100000.0,
+   "related_party_chars": 7000,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  },
+  "2020": {
+   "auditor": "Beta Partners LLP",
+   "cfo": "Kim Alvarez",
+   "ceo": "Sam Rivers",
+   "audit_fees": 2900000.0,
+   "related_party_chars": 12000,
+   "audit_fee_source": "filing",
+   "signatures_found": true
+  }
+ },
+ "peer_companies": [
+  {
+   "ticker": "SYNP0",
+   "name": "Synthetic Peer 0",
+   "cik": "0000001000",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  },
+  {
+   "ticker": "SYNP1",
+   "name": "Synthetic Peer 1",
+   "cik": "0000001001",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  },
+  {
+   "ticker": "SYNP2",
+   "name": "Synthetic Peer 2",
+   "cik": "0000001002",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  },
+  {
+   "ticker": "SYNP3",
+   "name": "Synthetic Peer 3",
+   "cik": "0000001003",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  },
+  {
+   "ticker": "SYNP4",
+   "name": "Synthetic Peer 4",
+   "cik": "0000001004",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  },
+  {
+   "ticker": "SYNP5",
+   "name": "Synthetic Peer 5",
+   "cik": "0000001005",
+   "fiscal_year": 2020,
+   "tier": 4,
+   "year_offset": 0
+  }
+ ],
+ "degraded": [
+  "llm_explanations: ANTHROPIC_API_KEY not set (deterministic templates used)",
+  "language_specificity: ANTHROPIC_API_KEY not set; specificity scores unavailable (no heuristic stand-in is computed)",
+  "temporal: no filing date found for FY2018",
+  "jev: unavailable (JEV_API_KEY not set)",
+  "critical_blocked: Jev unavailable",
+  "narrative: deterministic fallback (no key / LLM unavailable)"
+ ],
+ "warnings": [
+  "SYNTHETIC fixture"
+ ],
+ "agent_trace": [
+  {
+   "agent": "quantitative",
+   "status": "degraded",
+   "started": "2026-10-16T15:41:23+00:00",
+   "duration_ms": 4,
+   "summary": "severity=High flags=9 focus=2020: Beneish M-Score -1.16 in FY2020 is in the manipulator zone (> -1.78).",
+   "degraded": [
+    "llm_explanations: ANTHROPIC_API_KEY not set (deterministic templates used)"
+   ]
+  },
+  {
+   "agent": "language",
+   "status": "degraded",
+   "started": "2026-10-16T15:41:23+00:00",
+   "duration_ms": 1500,
+   "summary": "A materially new legal proceeding appeared in the FY2020 Legal Proceedings section (plus 2 other language flags).",
+   "degraded": [
+    "language_specificity: ANTHROPIC_API_KEY not set; specificity scores unavailable (no heuristic stand-in is computed)"
+   ]
+  },
+  {
+   "agent": "network",
+   "status": "ok",
+   "started": "2026-10-16T15:41:24.658554+00:00",
+   "duration_ms": 38,
+   "summary": "CFO changed from Lee Moran to Kim Alvarez in FY2020 (plus 2 other network flags).",
+   "degraded": []
+  },
+  {
+   "agent": "peer",
+   "status": "ok",
+   "started": "2026-10-16T11:41:24",
+   "duration_ms": 4,
+   "summary": "FY2020 peer outliers vs 6 SIC peers: DSO 102 days vs peer mean 41 days (z=+17.9); Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2); OCF/revenue 3.3% vs peer mean 16.2% (z=-13.8); ROA 20.0% vs peer mean 9.0% (z=+14.7)",
+   "degraded": []
+  },
+  {
+   "agent": "temporal",
+   "status": "degraded",
+   "started": "2026-10-16T15:41:24.701028+00:00",
+   "duration_ms": 0,
+   "summary": "Suspicion first crossed 40 with escalating signals in FY2018 (score 60, new flags: network.audit_fees, network.cfo_change, network.related_party, quantitative.dso_growth). FY2020 scores 100 (Critical); trajectory Escalating; 3 year(s) at or above 40.",
+   "degraded": [
+    "temporal: no filing date found for FY2018"
+   ]
+  },
+  {
+   "agent": "synthesis",
+   "status": "ok",
+   "started": "2026-10-16T15:41:24.701322+00:00",
+   "duration_ms": 0,
+   "summary": "grade=High flagging=4 high=4 guns=3 jev=no",
+   "degraded": [
+    "jev: unavailable (JEV_API_KEY not set)",
+    "critical_blocked: Jev unavailable",
+    "narrative: deterministic fallback (no key / LLM unavailable)"
+   ]
+  }
+ ],
+ "previous_risk_grade": "",
+ "risk_changed": false,
+ "error": "",
+ "quantitative_result": {
+  "beneish_scores": {
+   "2016": {
+    "status": "ok",
+    "score": -2.401632015573525,
+    "zone": "unlikely",
+    "flag": false,
+    "flag_level": "LOW",
+    "grey_zone": false,
+    "explanation": "Beneish M-Score -2.40 in FY2016: unlikely zone.",
+    "imputed": [],
+    "imputed_reasons": {},
+    "components": {
+     "DSRI": 1.0095238095238095,
+     "GMI": 1.0,
+     "AQI": 1.1084905660377362,
+     "SGI": 1.05,
+     "DEPI": 1.011111111111111,
+     "SGAI": 1.0,
+     "TATA": -0.006603773584905661,
+     "LVGI": 0.9669811320754718
+    },
+    "top_drivers": [
+     "SGI",
+     "AQI",
+     "LVGI"
+    ],
+    "caveats": []
+   },
+   "2017": {
+    "status": "ok",
+    "score": -2.322778109022774,
+    "zone": "unlikely",
+    "flag": false,
+    "flag_level": "LOW",
+    "grey_zone": false,
+    "explanation": "Beneish M-Score -2.32 in FY2017: unlikely zone.",
+    "imputed": [],
+    "imputed_reasons": {},
+    "components": {
+     "DSRI": 1.0530341662417135,
+     "GMI": 0.9955156950672647,
+     "AQI": 1.07776313311994,
+     "SGI": 1.0571428571428572,
+     "DEPI": 1.010989010989011,
+     "SGAI": 0.990990990990991,
+     "TATA": 0.0035398230088495575,
+     "LVGI": 0.9723721131016618
+    },
+    "top_drivers": [
+     "SGI",
+     "DSRI",
+     "AQI"
+    ],
+    "caveats": []
+   },
+   "2018": {
+    "status": "ok",
+    "score": -1.971755222009366,
+    "zone": "grey",
+    "flag": false,
+    "flag_level": "MEDIUM",
+    "grey_zone": true,
+    "explanation": "Beneish M-Score -1.97 in FY2018: grey zone (between -2.22 and -1.78: recorded, not flagged).",
+    "imputed": [],
+    "imputed_reasons": {},
+    "components": {
+     "DSRI": 1.2542372881355932,
+     "GMI": 1.036907875617553,
+     "AQI": 1.0546666666666664,
+     "SGI": 1.0810810810810811,
+     "DEPI": 1.111111111111111,
+     "SGAI": 0.9922727272727272,
+     "TATA": 0.032,
+     "LVGI": 1.0103529411764707
+    },
+    "top_drivers": [
+     "DSRI",
+     "TATA",
+     "SGI"
+    ],
+    "caveats": []
+   },
+   "2019": {
+    "status": "ok",
+    "score": -1.535295608003439,
+    "zone": "manipulator",
+    "flag": true,
+    "flag_level": "HIGH",
+    "grey_zone": false,
+    "explanation": "Revenue grew 10.0% while net receivables grew 62.5% in FY2019 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 38.8% to 37.9% (-0.9 percentage points); net income less operating cash flow was 8.9% of total assets. Beneish M-Score -1.54 is above the -1.78 manipulation cut-off.",
+    "imputed": [],
+    "imputed_reasons": {},
+    "components": {
+     "DSRI": 1.4772727272727273,
+     "GMI": 1.0230000000000001,
+     "AQI": 0.9994121105232218,
+     "SGI": 1.1,
+     "DEPI": 1.0527950310559007,
+     "SGAI": 1.0015408320493067,
+     "TATA": 0.08888888888888889,
+     "LVGI": 1.0526315789473684
+    },
+    "top_drivers": [
+     "DSRI",
+     "TATA",
+     "SGI"
+    ],
+    "caveats": []
+   },
+   "2020": {
+    "status": "ok",
+    "score": -1.1608847983296708,
+    "zone": "manipulator",
+    "flag": true,
+    "flag_level": "HIGH",
+    "grey_zone": false,
+    "explanation": "Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets. Beneish M-Score -1.16 is above the -1.78 manipulation cut-off.",
+    "imputed": [],
+    "imputed_reasons": {},
+    "components": {
+     "DSRI": 1.4215384615384616,
+     "GMI": 1.0521885521885521,
+     "AQI": 1.0058823529411762,
+     "SGI": 1.1363636363636365,
+     "DEPI": 1.0221238938053097,
+     "SGAI": 1.0153846153846156,
+     "TATA": 0.16666666666666666,
+     "LVGI": 1.0
+    },
+    "top_drivers": [
+     "TATA",
+     "DSRI",
+     "SGI"
+    ],
+    "caveats": []
+   }
+  },
+  "altman_scores": {
+   "2016": {
+    "status": "ok",
+    "score": 2.2330236897274633,
+    "zone": "grey",
+    "variant": "Z-prime",
+    "flag": false,
+    "signal_type": "business_distress",
+    "unit": "USD",
+    "components": {
+     "X1": 0.2028301886792453,
+     "X2": 0.3113207547169811,
+     "X3": 0.13867924528301886,
+     "X4": 0.9629629629629629,
+     "X5": 0.9905660377358491
+    },
+    "derived": [
+     "TotalLiabilities derived as TotalAssets - StockholdersEquity"
+    ],
+    "note": "BUSINESS-DISTRESS signal, not evidence of manipulation. Altman Z' (book-equity variant) used: no point-in-time market cap supplied. Grey zone is not distress."
+   },
+   "2017": {
+    "status": "ok",
+    "score": 2.2291958565917858,
+    "zone": "grey",
+    "variant": "Z-prime",
+    "flag": false,
+    "signal_type": "business_distress",
+    "unit": "USD",
+    "components": {
+     "X1": 0.2079646017699115,
+     "X2": 0.3274336283185841,
+     "X3": 0.13876106194690263,
+     "X4": 0.9316239316239316,
+     "X5": 0.9823008849557522
+    },
+    "derived": [
+     "TotalLiabilities derived as TotalAssets - StockholdersEquity"
+    ],
+    "note": "BUSINESS-DISTRESS signal, not evidence of manipulation. Altman Z' (book-equity variant) used: no point-in-time market cap supplied. Grey zone is not distress."
+   },
+   "2018": {
+    "status": "ok",
+    "score": 2.2095289777777776,
+    "zone": "grey",
+    "variant": "Z-prime",
+    "flag": false,
+    "signal_type": "business_distress",
+    "unit": "USD",
+    "components": {
+     "X1": 0.228,
+     "X2": 0.328,
+     "X3": 0.1456,
+     "X4": 0.8518518518518519,
+     "X5": 0.96
+    },
+    "derived": [
+     "TotalLiabilities derived as TotalAssets - StockholdersEquity"
+    ],
+    "note": "BUSINESS-DISTRESS signal, not evidence of manipulation. Altman Z' (book-equity variant) used: no point-in-time market cap supplied. Grey zone is not distress."
+   },
+   "2019": {
+    "status": "ok",
+    "score": 2.381616296296296,
+    "zone": "grey",
+    "variant": "Z-prime",
+    "flag": false,
+    "signal_type": "business_distress",
+    "unit": "USD",
+    "components": {
+     "X1": 0.24444444444444444,
+     "X2": 0.3333333333333333,
+     "X3": 0.19703703703703704,
+     "X4": 0.8,
+     "X5": 0.9777777777777777
+    },
+    "derived": [
+     "TotalLiabilities derived as TotalAssets - StockholdersEquity"
+    ],
+    "note": "BUSINESS-DISTRESS signal, not evidence of manipulation. Altman Z' (book-equity variant) used: no point-in-time market cap supplied. Grey zone is not distress."
+   },
+   "2020": {
+    "status": "ok",
+    "score": 2.6469624242424246,
+    "zone": "grey",
+    "variant": "Z-prime",
+    "flag": false,
+    "signal_type": "business_distress",
+    "unit": "USD",
+    "components": {
+     "X1": 0.28,
+     "X2": 0.3333333333333333,
+     "X3": 0.28,
+     "X4": 0.7045454545454546,
+     "X5": 1.0
+    },
+    "derived": [
+     "TotalLiabilities derived as TotalAssets - StockholdersEquity"
+    ],
+    "note": "BUSINESS-DISTRESS signal, not evidence of manipulation. Altman Z' (book-equity variant) used: no point-in-time market cap supplied. Grey zone is not distress."
+   }
+  },
+  "revenue_quality": {
+   "2016": {
+    "status": "ok",
+    "ratio": 1.0666666666666667,
+    "prior_ratio": 1.1,
+    "flag": false,
+    "flag_evaluable": true,
+    "note": null
+   },
+   "2017": {
+    "status": "ok",
+    "ratio": 0.9642857142857143,
+    "prior_ratio": 1.0666666666666667,
+    "flag": false,
+    "flag_evaluable": true,
+    "note": null
+   },
+   "2018": {
+    "status": "ok",
+    "ratio": 0.6923076923076923,
+    "prior_ratio": 0.9642857142857143,
+    "flag": false,
+    "flag_evaluable": true,
+    "note": null
+   },
+   "2019": {
+    "status": "ok",
+    "ratio": 0.3684210526315789,
+    "prior_ratio": 0.6923076923076923,
+    "flag": true,
+    "flag_evaluable": true,
+    "note": null
+   },
+   "2020": {
+    "status": "ok",
+    "ratio": 0.16666666666666666,
+    "prior_ratio": 0.3684210526315789,
+    "flag": true,
+    "flag_evaluable": true,
+    "note": null
+   }
+  },
+  "dso_trend": {
+   "2016": {
+    "status": "ok",
+    "dso_days": 36.84761904761905,
+    "prior_dso_days": 36.5,
+    "yoy_change_pct": 0.952380952380949,
+    "flag": false,
+    "note": null
+   },
+   "2017": {
+    "status": "ok",
+    "dso_days": 38.8018018018018,
+    "prior_dso_days": 36.84761904761905,
+    "yoy_change_pct": 5.303416624171331,
+    "flag": false,
+    "note": null
+   },
+   "2018": {
+    "status": "ok",
+    "dso_days": 48.666666666666664,
+    "prior_dso_days": 38.8018018018018,
+    "yoy_change_pct": 25.423728813559322,
+    "flag": true,
+    "note": null
+   },
+   "2019": {
+    "status": "ok",
+    "dso_days": 71.89393939393939,
+    "prior_dso_days": 48.666666666666664,
+    "yoy_change_pct": 47.72727272727273,
+    "flag": true,
+    "note": null
+   },
+   "2020": {
+    "status": "ok",
+    "dso_days": 102.2,
+    "prior_dso_days": 71.89393939393939,
+    "yoy_change_pct": 42.15384615384616,
+    "flag": true,
+    "note": null
+   }
+  },
+  "accruals_ratio": {
+   "2016": {
+    "status": "ok",
+    "ratio": -0.006603773584905661,
+    "flag": false
+   },
+   "2017": {
+    "status": "ok",
+    "ratio": 0.0035398230088495575,
+    "flag": false
+   },
+   "2018": {
+    "status": "ok",
+    "ratio": 0.032,
+    "flag": false
+   },
+   "2019": {
+    "status": "ok",
+    "ratio": 0.08888888888888889,
+    "flag": true
+   },
+   "2020": {
+    "status": "ok",
+    "ratio": 0.16666666666666666,
+    "flag": true
+   }
+  },
+  "flags_fired": 9,
+  "highest_risk_year": 2020,
+  "key_finding": "Beneish M-Score -1.16 in FY2020 is in the manipulator zone (> -1.78).",
+  "severity": "High",
+  "flags_by_year": {
+   "2016": [],
+   "2017": [],
+   "2018": [
+    "quantitative.dso_growth"
+   ],
+   "2019": [
+    "quantitative.beneish",
+    "quantitative.revenue_quality",
+    "quantitative.dso_growth",
+    "quantitative.accruals"
+   ],
+   "2020": [
+    "quantitative.beneish",
+    "quantitative.revenue_quality",
+    "quantitative.dso_growth",
+    "quantitative.accruals"
+   ]
+  },
+  "focus_year": 2020,
+  "unit": "USD",
+  "data_quality": {
+   "unavailable": {},
+   "unit": "USD",
+   "source_by_year": {
+    "2015": "xbrl",
+    "2016": "xbrl",
+    "2017": "xbrl",
+    "2018": "xbrl",
+    "2019": "xbrl",
+    "2020": "xbrl"
+   },
+   "comparative_filled": {},
+   "caveats": [],
+   "altman_variant_note": "Altman Z' (book-equity variant) used: no point-in-time market cap supplied"
+  },
+  "evidence": [
+   {
+    "flag": "quantitative.dso_growth",
+    "year": 2018,
+    "metric": "dso_yoy_change_pct",
+    "value": 25.423728813559322,
+    "display": "DSO rose from 38.8 to 48.7 days (+25.4%) in FY2018, above the +20% threshold. Revenue grew 8.1% while net receivables grew 35.6% in FY2018 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern.",
+    "numbers": [
+     38.8,
+     48.7,
+     25.4,
+     20.0,
+     8.1,
+     35.6
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.beneish",
+    "year": 2019,
+    "metric": "beneish_m_score",
+    "value": -1.535295608003439,
+    "display": "Beneish M-Score was -1.54 in FY2019, above the -1.78 manipulation threshold. Revenue grew 10.0% while net receivables grew 62.5% in FY2019 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 38.8% to 37.9% (-0.9 percentage points); net income less operating cash flow was 8.9% of total assets.",
+    "numbers": [
+     -1.54,
+     -1.78,
+     10.0,
+     62.5,
+     38.8,
+     37.9,
+     -0.9,
+     8.9
+    ],
+    "signal_type": "manipulation",
+    "imputed": []
+   },
+   {
+    "flag": "quantitative.revenue_quality",
+    "year": 2019,
+    "metric": "revenue_quality_ocf_to_ni",
+    "value": 0.3684210526315789,
+    "display": "Operating cash flow was 0.37x net income in FY2019 and 0.69x in FY2018; below 0.8 in two consecutive years means reported profit is not converting into cash.",
+    "numbers": [
+     0.37,
+     0.69,
+     0.8
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.dso_growth",
+    "year": 2019,
+    "metric": "dso_yoy_change_pct",
+    "value": 47.72727272727273,
+    "display": "DSO rose from 48.7 to 71.9 days (+47.7%) in FY2019, above the +20% threshold. Revenue grew 10.0% while net receivables grew 62.5% in FY2019 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern.",
+    "numbers": [
+     48.7,
+     71.9,
+     47.7,
+     20.0,
+     10.0,
+     62.5
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.accruals",
+    "year": 2019,
+    "metric": "accruals_ratio",
+    "value": 0.08888888888888889,
+    "display": "Accruals (net income minus operating cash flow) were 8.9% of total assets in FY2019, above the 5.0% threshold: earnings are running ahead of cash.",
+    "numbers": [
+     8.9,
+     5.0
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.beneish",
+    "year": 2020,
+    "metric": "beneish_m_score",
+    "value": -1.1608847983296708,
+    "display": "Beneish M-Score was -1.16 in FY2020, above the -1.78 manipulation threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets.",
+    "numbers": [
+     -1.16,
+     -1.78,
+     13.6,
+     61.5,
+     37.9,
+     36.0,
+     -1.9,
+     16.7
+    ],
+    "signal_type": "manipulation",
+    "imputed": []
+   },
+   {
+    "flag": "quantitative.revenue_quality",
+    "year": 2020,
+    "metric": "revenue_quality_ocf_to_ni",
+    "value": 0.16666666666666666,
+    "display": "Operating cash flow was 0.17x net income in FY2020 and 0.37x in FY2019; below 0.8 in two consecutive years means reported profit is not converting into cash.",
+    "numbers": [
+     0.17,
+     0.37,
+     0.8
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.dso_growth",
+    "year": 2020,
+    "metric": "dso_yoy_change_pct",
+    "value": 42.15384615384616,
+    "display": "DSO rose from 71.9 to 102.2 days (+42.2%) in FY2020, above the +20% threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern.",
+    "numbers": [
+     71.9,
+     102.2,
+     42.2,
+     20.0,
+     13.6,
+     61.5
+    ],
+    "signal_type": "manipulation"
+   },
+   {
+    "flag": "quantitative.accruals",
+    "year": 2020,
+    "metric": "accruals_ratio",
+    "value": 0.16666666666666666,
+    "display": "Accruals (net income minus operating cash flow) were 16.7% of total assets in FY2020, above the 5.0% threshold: earnings are running ahead of cash.",
+    "numbers": [
+     16.7,
+     5.0
+    ],
+    "signal_type": "manipulation"
+   }
+  ],
+  "degraded": [
+   "llm_explanations: ANTHROPIC_API_KEY not set (deterministic templates used)"
+  ],
+  "n_unavailable_metrics": 0,
+  "analysed_years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020
+  ]
+ },
+ "language_result": {
+  "hedging_trend": {
+   "2015": {
+    "ratio": 0.0034387895460797797,
+    "count": 5,
+    "words": 1454,
+    "by_term": {
+     "believe": 1,
+     "may": 1,
+     "expect": 1,
+     "approximately": 1,
+     "subject to": 1
+    },
+    "yoy_change": null,
+    "yoy_change_pct": null,
+    "flag": false,
+    "yoy_note": "no usable prior-year MD&A: YoY change not computed"
+   },
+   "2016": {
+    "ratio": 0.0034387895460797797,
+    "count": 5,
+    "words": 1454,
+    "by_term": {
+     "believe": 1,
+     "may": 1,
+     "expect": 1,
+     "approximately": 1,
+     "subject to": 1
+    },
+    "yoy_change": 0.0,
+    "yoy_change_pct": 0.0,
+    "flag": false,
+    "prior_ratio": 0.0034387895460797797
+   },
+   "2017": {
+    "ratio": 0.006811989100817439,
+    "count": 10,
+    "words": 1468,
+    "by_term": {
+     "believe": 2,
+     "may": 2,
+     "expect": 2,
+     "approximately": 2,
+     "subject to": 2
+    },
+    "yoy_change": 0.9809264305177112,
+    "yoy_change_pct": 98.09264305177112,
+    "flag": true,
+    "prior_ratio": 0.0034387895460797797
+   },
+   "2018": {
+    "ratio": 0.013368983957219251,
+    "count": 20,
+    "words": 1496,
+    "by_term": {
+     "believe": 4,
+     "may": 4,
+     "expect": 4,
+     "approximately": 4,
+     "subject to": 4
+    },
+    "yoy_change": 0.9625668449197861,
+    "yoy_change_pct": 96.2566844919786,
+    "flag": true,
+    "prior_ratio": 0.006811989100817439
+   },
+   "2019": {
+    "ratio": 0.02577319587628866,
+    "count": 40,
+    "words": 1552,
+    "by_term": {
+     "believe": 8,
+     "may": 8,
+     "expect": 8,
+     "approximately": 8,
+     "subject to": 8
+    },
+    "yoy_change": 0.9278350515463917,
+    "yoy_change_pct": 92.78350515463917,
+    "flag": true,
+    "prior_ratio": 0.013368983957219251
+   },
+   "2020": {
+    "ratio": 0.042787286063569685,
+    "count": 70,
+    "words": 1636,
+    "by_term": {
+     "believe": 14,
+     "may": 14,
+     "expect": 14,
+     "approximately": 14,
+     "subject to": 14
+    },
+    "yoy_change": 0.6601466992665038,
+    "yoy_change_pct": 66.01466992665038,
+    "flag": true,
+    "prior_ratio": 0.02577319587628866
+   }
+  },
+  "passive_voice": {
+   "2016": {
+    "pct": 0.0,
+    "passive_sentences": 0,
+    "sentences": 61,
+    "method": "spacy:en_core_web_sm",
+    "flag": false
+   },
+   "2017": {
+    "pct": 0.0,
+    "passive_sentences": 0,
+    "sentences": 62,
+    "method": "spacy:en_core_web_sm",
+    "flag": false
+   },
+   "2018": {
+    "pct": 0.0,
+    "passive_sentences": 0,
+    "sentences": 64,
+    "method": "spacy:en_core_web_sm",
+    "flag": false
+   },
+   "2019": {
+    "pct": 0.0,
+    "passive_sentences": 0,
+    "sentences": 68,
+    "method": "spacy:en_core_web_sm",
+    "flag": false
+   },
+   "2020": {
+    "pct": 0.0,
+    "passive_sentences": 0,
+    "sentences": 74,
+    "method": "spacy:en_core_web_sm",
+    "flag": false
+   }
+  },
+  "risk_factor_length": {
+   "2015": {
+    "chars": 20000,
+    "yoy_change": null,
+    "flag": false
+   },
+   "2016": {
+    "chars": 20500,
+    "yoy_change": 0.025,
+    "flag": false,
+    "yoy_change_pct": 2.5,
+    "prior_chars": 20000
+   },
+   "2017": {
+    "chars": 20999,
+    "yoy_change": 0.024341463414634147,
+    "flag": false,
+    "yoy_change_pct": 2.4341463414634146,
+    "prior_chars": 20500
+   },
+   "2018": {
+    "chars": 24000,
+    "yoy_change": 0.14291156721748655,
+    "flag": false,
+    "yoy_change_pct": 14.291156721748655,
+    "prior_chars": 20999
+   },
+   "2019": {
+    "chars": 31000,
+    "yoy_change": 0.2916666666666667,
+    "flag": false,
+    "yoy_change_pct": 29.166666666666668,
+    "prior_chars": 24000
+   },
+   "2020": {
+    "chars": 46000,
+    "yoy_change": 0.4838709677419355,
+    "flag": true,
+    "yoy_change_pct": 48.38709677419355,
+    "prior_chars": 31000
+   }
+  },
+  "specificity_scores": {
+   "2016": {
+    "score": null,
+    "reason": "unavailable: no ANTHROPIC_API_KEY",
+    "flag": false
+   },
+   "2017": {
+    "score": null,
+    "reason": "unavailable: no ANTHROPIC_API_KEY",
+    "flag": false
+   },
+   "2018": {
+    "score": null,
+    "reason": "unavailable: no ANTHROPIC_API_KEY",
+    "flag": false
+   },
+   "2019": {
+    "score": null,
+    "reason": "unavailable: no ANTHROPIC_API_KEY",
+    "flag": false
+   },
+   "2020": {
+    "score": null,
+    "reason": "unavailable: no ANTHROPIC_API_KEY",
+    "flag": false
+   }
+  },
+  "new_legal_proceedings": {
+   "2015": {
+    "detected": false,
+    "text": "",
+    "confidence": null,
+    "status": "no_prior_year",
+    "reason": "unavailable: no prior-year Legal Proceedings section to compare with"
+   },
+   "2016": {
+    "detected": false,
+    "text": "",
+    "new_units": 0,
+    "n_units": 0,
+    "confidence": "high",
+    "status": "none_disclosed"
+   },
+   "2017": {
+    "detected": false,
+    "text": "",
+    "new_units": 0,
+    "n_units": 0,
+    "confidence": "high",
+    "status": "none_disclosed"
+   },
+   "2018": {
+    "detected": false,
+    "text": "",
+    "new_units": 0,
+    "n_units": 0,
+    "confidence": "high",
+    "status": "none_disclosed"
+   },
+   "2019": {
+    "detected": false,
+    "text": "",
+    "new_units": 0,
+    "n_units": 0,
+    "confidence": "high",
+    "status": "none_disclosed"
+   },
+   "2020": {
+    "detected": true,
+    "text": "A purported class action was filed against the company in 2020 alleging misstatements.",
+    "new_units": 1,
+    "n_units": 1,
+    "confidence": "high",
+    "status": "ok"
+   }
+  },
+  "flags_fired": 6,
+  "key_finding": "A materially new legal proceeding appeared in the FY2020 Legal Proceedings section (plus 2 other language flags).",
+  "severity": "High",
+  "flags_by_year": {
+   "2016": [],
+   "2017": [
+    "language.hedging"
+   ],
+   "2018": [
+    "language.hedging"
+   ],
+   "2019": [
+    "language.hedging"
+   ],
+   "2020": [
+    "language.hedging",
+    "language.risk_factor_growth",
+    "language.new_legal"
+   ]
+  },
+  "focus_year": 2020,
+  "analysis_years": [
+   2016,
+   2017,
+   2018,
+   2019,
+   2020
+  ],
+  "evidence": [
+   {
+    "flag": "language.hedging",
+    "year": 2017,
+    "metric": "hedging_ratio",
+    "value": 0.006811989100817439,
+    "display": "Hedging-word ratio rose 98% to 0.7% of MD&A words in FY2017",
+    "numbers": [
+     98,
+     0.7,
+     2017
+    ]
+   },
+   {
+    "flag": "language.hedging",
+    "year": 2018,
+    "metric": "hedging_ratio",
+    "value": 0.013368983957219251,
+    "display": "Hedging-word ratio rose 96% to 1.3% of MD&A words in FY2018",
+    "numbers": [
+     96,
+     1.3,
+     2018
+    ]
+   },
+   {
+    "flag": "language.hedging",
+    "year": 2019,
+    "metric": "hedging_ratio",
+    "value": 0.02577319587628866,
+    "display": "Hedging-word ratio rose 93% to 2.6% of MD&A words in FY2019",
+    "numbers": [
+     93,
+     2.6,
+     2019
+    ]
+   },
+   {
+    "flag": "language.hedging",
+    "year": 2020,
+    "metric": "hedging_ratio",
+    "value": 0.042787286063569685,
+    "display": "Hedging-word ratio rose 66% to 4.3% of MD&A words in FY2020",
+    "numbers": [
+     66,
+     4.3,
+     2020
+    ]
+   },
+   {
+    "flag": "language.risk_factor_growth",
+    "year": 2020,
+    "metric": "risk_factor_chars",
+    "value": 46000,
+    "display": "Risk Factors section grew 48% to 46,000 characters in FY2020",
+    "numbers": [
+     48,
+     46000,
+     2020
+    ]
+   },
+   {
+    "flag": "language.new_legal",
+    "year": 2020,
+    "metric": "new_legal_paragraphs",
+    "value": 1,
+    "display": "1 materially new paragraph(s) in the FY2020 Legal Proceedings section vs FY2019",
+    "numbers": [
+     1,
+     2020,
+     2019
+    ],
+    "text": "A purported class action was filed against the company in 2020 alleging misstatements.",
+    "confidence": "high"
+   }
+  ],
+  "sections": {
+   "2015": {
+    "mdna_chars": 10533,
+    "risk_factor_chars": 20000,
+    "legal_chars": 5,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   },
+   "2016": {
+    "mdna_chars": 10533,
+    "risk_factor_chars": 20500,
+    "legal_chars": 5,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   },
+   "2017": {
+    "mdna_chars": 10627,
+    "risk_factor_chars": 20999,
+    "legal_chars": 5,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   },
+   "2018": {
+    "mdna_chars": 10815,
+    "risk_factor_chars": 24000,
+    "legal_chars": 5,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   },
+   "2019": {
+    "mdna_chars": 11191,
+    "risk_factor_chars": 31000,
+    "legal_chars": 5,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   },
+   "2020": {
+    "mdna_chars": 11755,
+    "risk_factor_chars": 46000,
+    "legal_chars": 86,
+    "mdna_method": "item-headers",
+    "risk_method": "item-headers"
+   }
+  },
+  "data_quality": {
+   "unavailable": {
+    "specificity_scores.2016": "unavailable: no ANTHROPIC_API_KEY",
+    "specificity_scores.2017": "unavailable: no ANTHROPIC_API_KEY",
+    "specificity_scores.2018": "unavailable: no ANTHROPIC_API_KEY",
+    "specificity_scores.2019": "unavailable: no ANTHROPIC_API_KEY",
+    "specificity_scores.2020": "unavailable: no ANTHROPIC_API_KEY"
+   }
+  },
+  "degraded": [
+   "language_specificity: ANTHROPIC_API_KEY not set; specificity scores unavailable (no heuristic stand-in is computed)"
+  ],
+  "thresholds": {
+   "hedging_yoy": 0.25,
+   "passive_pct": 15.0,
+   "risk_factor_yoy": 0.4,
+   "specificity_min": 5,
+   "specificity_drop": 2
+  },
+  "methodology": {
+   "hedging_terms": [
+    "may",
+    "might",
+    "could",
+    "subject to",
+    "uncertain",
+    "contingent",
+    "approximately",
+    "estimated",
+    "believe",
+    "expect",
+    "intend",
+    "plan"
+   ],
+   "hedging_matching": "literal, word-boundary, case-insensitive",
+   "passive_scope": "MD&A prose sentences only",
+   "passive_method": "spacy:en_core_web_sm",
+   "specificity_prompt": "agents.language_agent.SPECIFICITY_SYSTEM_PROMPT"
+  }
+ },
+ "network_result": {
+  "auditor_history": {
+   "2016": {
+    "name": "Alpha Audit LLP",
+    "changed": false,
+    "status": "unchanged",
+    "compared_to": 2015,
+    "gap_years": 0
+   },
+   "2017": {
+    "name": "Alpha Audit LLP",
+    "changed": false,
+    "status": "unchanged",
+    "compared_to": 2016,
+    "gap_years": 0
+   },
+   "2018": {
+    "name": "Alpha Audit LLP",
+    "changed": false,
+    "status": "unchanged",
+    "compared_to": 2017,
+    "gap_years": 0
+   },
+   "2019": {
+    "name": "Beta Partners LLP",
+    "changed": true,
+    "status": "changed",
+    "compared_to": 2018,
+    "gap_years": 0,
+    "previous_name": "Alpha Audit LLP"
+   },
+   "2020": {
+    "name": "Beta Partners LLP",
+    "changed": false,
+    "status": "unchanged",
+    "compared_to": 2019,
+    "gap_years": 0
+   }
+  },
+  "executive_changes": {
+   "2016": {
+    "cfo": "Pat Quinn",
+    "ceo": "Sam Rivers",
+    "cfo_changed": false,
+    "ceo_changed": false,
+    "cfo_status": "unchanged",
+    "ceo_status": "unchanged",
+    "cfo_previous": "Pat Quinn",
+    "cfo_compared_to": 2015,
+    "ceo_previous": "Sam Rivers",
+    "ceo_compared_to": 2015
+   },
+   "2017": {
+    "cfo": "Pat Quinn",
+    "ceo": "Sam Rivers",
+    "cfo_changed": false,
+    "ceo_changed": false,
+    "cfo_status": "unchanged",
+    "ceo_status": "unchanged",
+    "cfo_previous": "Pat Quinn",
+    "cfo_compared_to": 2016,
+    "ceo_previous": "Sam Rivers",
+    "ceo_compared_to": 2016
+   },
+   "2018": {
+    "cfo": "Lee Moran",
+    "ceo": "Sam Rivers",
+    "cfo_changed": true,
+    "ceo_changed": false,
+    "cfo_status": "changed",
+    "ceo_status": "unchanged",
+    "cfo_previous": "Pat Quinn",
+    "cfo_compared_to": 2017,
+    "ceo_previous": "Sam Rivers",
+    "ceo_compared_to": 2017
+   },
+   "2019": {
+    "cfo": "Lee Moran",
+    "ceo": "Sam Rivers",
+    "cfo_changed": false,
+    "ceo_changed": false,
+    "cfo_status": "unchanged",
+    "ceo_status": "unchanged",
+    "cfo_previous": "Lee Moran",
+    "cfo_compared_to": 2018,
+    "ceo_previous": "Sam Rivers",
+    "ceo_compared_to": 2018
+   },
+   "2020": {
+    "cfo": "Kim Alvarez",
+    "ceo": "Sam Rivers",
+    "cfo_changed": true,
+    "ceo_changed": false,
+    "cfo_status": "changed",
+    "ceo_status": "unchanged",
+    "cfo_previous": "Lee Moran",
+    "cfo_compared_to": 2019,
+    "ceo_previous": "Sam Rivers",
+    "ceo_compared_to": 2019
+   }
+  },
+  "audit_fees": {
+   "2016": {
+    "amount": 1050000.0,
+    "yoy_change_pct": 5.0,
+    "flag": false,
+    "confidence": null,
+    "revenue_growth_pct": 5.0,
+    "source": "filing",
+    "status": "ok",
+    "prior_amount": 1000000.0
+   },
+   "2017": {
+    "amount": 1100000.0,
+    "yoy_change_pct": 4.76,
+    "flag": false,
+    "confidence": null,
+    "revenue_growth_pct": 5.71,
+    "source": "filing",
+    "status": "ok",
+    "prior_amount": 1050000.0
+   },
+   "2018": {
+    "amount": 1500000.0,
+    "yoy_change_pct": 36.36,
+    "flag": true,
+    "confidence": "normal",
+    "revenue_growth_pct": 8.11,
+    "source": "filing",
+    "status": "ok",
+    "prior_amount": 1100000.0
+   },
+   "2019": {
+    "amount": 2100000.0,
+    "yoy_change_pct": 40.0,
+    "flag": true,
+    "confidence": "normal",
+    "revenue_growth_pct": 10.0,
+    "source": "filing",
+    "status": "ok",
+    "prior_amount": 1500000.0
+   },
+   "2020": {
+    "amount": 2900000.0,
+    "yoy_change_pct": 38.1,
+    "flag": true,
+    "confidence": "normal",
+    "revenue_growth_pct": 13.64,
+    "source": "filing",
+    "status": "ok",
+    "prior_amount": 2100000.0
+   }
+  },
+  "restatements": {
+   "2016": {
+    "detected": false,
+    "text": "",
+    "restatement_detected": false,
+    "material_weakness_detected": false,
+    "significant_deficiency_detected": false,
+    "n_restatement_hits": 0,
+    "n_restatement_hits_rejected_non_error": 0,
+    "n_material_weakness_hits": 0,
+    "negated_hits_ignored": 0
+   },
+   "2017": {
+    "detected": false,
+    "text": "",
+    "restatement_detected": false,
+    "material_weakness_detected": false,
+    "significant_deficiency_detected": false,
+    "n_restatement_hits": 0,
+    "n_restatement_hits_rejected_non_error": 0,
+    "n_material_weakness_hits": 0,
+    "negated_hits_ignored": 0
+   },
+   "2018": {
+    "detected": false,
+    "text": "",
+    "restatement_detected": false,
+    "material_weakness_detected": false,
+    "significant_deficiency_detected": false,
+    "n_restatement_hits": 0,
+    "n_restatement_hits_rejected_non_error": 0,
+    "n_material_weakness_hits": 0,
+    "negated_hits_ignored": 0
+   },
+   "2019": {
+    "detected": false,
+    "text": "",
+    "restatement_detected": false,
+    "material_weakness_detected": false,
+    "significant_deficiency_detected": false,
+    "n_restatement_hits": 0,
+    "n_restatement_hits_rejected_non_error": 0,
+    "n_material_weakness_hits": 0,
+    "negated_hits_ignored": 0
+   },
+   "2020": {
+    "detected": false,
+    "text": "",
+    "restatement_detected": false,
+    "material_weakness_detected": false,
+    "significant_deficiency_detected": false,
+    "n_restatement_hits": 0,
+    "n_restatement_hits_rejected_non_error": 0,
+    "n_material_weakness_hits": 0,
+    "negated_hits_ignored": 0
+   }
+  },
+  "related_party_flags": {
+   "2016": {
+    "detected": false,
+    "chars": 2100,
+    "yoy_change_pct": 5.0,
+    "new_disclosure": false,
+    "prior_chars": 2000,
+    "status": "ok"
+   },
+   "2017": {
+    "detected": false,
+    "chars": 2200,
+    "yoy_change_pct": 4.8,
+    "new_disclosure": false,
+    "prior_chars": 2100,
+    "status": "ok"
+   },
+   "2018": {
+    "detected": true,
+    "chars": 4000,
+    "yoy_change_pct": 81.8,
+    "new_disclosure": false,
+    "prior_chars": 2200,
+    "status": "ok"
+   },
+   "2019": {
+    "detected": true,
+    "chars": 7000,
+    "yoy_change_pct": 75.0,
+    "new_disclosure": false,
+    "prior_chars": 4000,
+    "status": "ok"
+   },
+   "2020": {
+    "detected": true,
+    "chars": 12000,
+    "yoy_change_pct": 71.4,
+    "new_disclosure": false,
+    "prior_chars": 7000,
+    "status": "ok"
+   }
+  },
+  "going_concern": {
+   "2016": {
+    "detected": false,
+    "text": "",
+    "n_hits": 0
+   },
+   "2017": {
+    "detected": false,
+    "text": "",
+    "n_hits": 0
+   },
+   "2018": {
+    "detected": false,
+    "text": "",
+    "n_hits": 0
+   },
+   "2019": {
+    "detected": false,
+    "text": "",
+    "n_hits": 0
+   },
+   "2020": {
+    "detected": false,
+    "text": "",
+    "n_hits": 0
+   }
+  },
+  "flags_fired": 9,
+  "key_finding": "CFO changed from Lee Moran to Kim Alvarez in FY2020 (plus 2 other network flags).",
+  "severity": "High",
+  "flags_by_year": {
+   "2016": [],
+   "2017": [],
+   "2018": [
+    "network.cfo_change",
+    "network.audit_fees",
+    "network.related_party"
+   ],
+   "2019": [
+    "network.auditor_change",
+    "network.audit_fees",
+    "network.related_party"
+   ],
+   "2020": [
+    "network.cfo_change",
+    "network.audit_fees",
+    "network.related_party"
+   ]
+  },
+  "focus_year": 2020,
+  "data_quality": {
+   "unavailable": {}
+  },
+  "degraded": [],
+  "evidence": [
+   {
+    "flag": "network.cfo_change",
+    "year": 2018,
+    "metric": "cfo",
+    "value": {
+     "from": "Pat Quinn",
+     "to": "Lee Moran",
+     "compared_to": 2017
+    },
+    "display": "CFO changed from Pat Quinn to Lee Moran in FY2018",
+    "numbers": [
+     2018.0
+    ]
+   },
+   {
+    "flag": "network.auditor_change",
+    "year": 2019,
+    "metric": "auditor",
+    "value": {
+     "from": "Alpha Audit LLP",
+     "to": "Beta Partners LLP",
+     "compared_to": 2018
+    },
+    "display": "Auditor changed from Alpha Audit LLP to Beta Partners LLP in FY2019",
+    "numbers": [
+     2019.0
+    ]
+   },
+   {
+    "flag": "network.cfo_change",
+    "year": 2020,
+    "metric": "cfo",
+    "value": {
+     "from": "Lee Moran",
+     "to": "Kim Alvarez",
+     "compared_to": 2019
+    },
+    "display": "CFO changed from Lee Moran to Kim Alvarez in FY2020",
+    "numbers": [
+     2020.0
+    ]
+   },
+   {
+    "flag": "network.audit_fees",
+    "year": 2018,
+    "metric": "audit_fees_yoy_pct",
+    "value": 36.36,
+    "display": "Audit fees rose 36.4% in FY2018 (1,100,000 to 1,500,000) while revenue grew 8.1% (less than half the fee growth)",
+    "numbers": [
+     36.4,
+     2018.0,
+     1100000.0,
+     1500000.0,
+     8.1
+    ],
+    "confidence": "normal"
+   },
+   {
+    "flag": "network.audit_fees",
+    "year": 2019,
+    "metric": "audit_fees_yoy_pct",
+    "value": 40.0,
+    "display": "Audit fees rose 40.0% in FY2019 (1,500,000 to 2,100,000) while revenue grew 10.0% (less than half the fee growth)",
+    "numbers": [
+     40.0,
+     2019.0,
+     1500000.0,
+     2100000.0,
+     10.0
+    ],
+    "confidence": "normal"
+   },
+   {
+    "flag": "network.audit_fees",
+    "year": 2020,
+    "metric": "audit_fees_yoy_pct",
+    "value": 38.1,
+    "display": "Audit fees rose 38.1% in FY2020 (2,100,000 to 2,900,000) while revenue grew 13.6% (less than half the fee growth)",
+    "numbers": [
+     38.1,
+     2020.0,
+     2100000.0,
+     2900000.0,
+     13.6
+    ],
+    "confidence": "normal"
+   },
+   {
+    "flag": "network.related_party",
+    "year": 2018,
+    "metric": "related_party_chars_yoy_pct",
+    "value": 81.8,
+    "display": "Related-party disclosure grew 82% in FY2018 (2,200 to 4,000 characters)",
+    "numbers": [
+     82.0,
+     2018.0,
+     2200.0,
+     4000.0
+    ]
+   },
+   {
+    "flag": "network.related_party",
+    "year": 2019,
+    "metric": "related_party_chars_yoy_pct",
+    "value": 75.0,
+    "display": "Related-party disclosure grew 75% in FY2019 (4,000 to 7,000 characters)",
+    "numbers": [
+     75.0,
+     2019.0,
+     4000.0,
+     7000.0
+    ]
+   },
+   {
+    "flag": "network.related_party",
+    "year": 2020,
+    "metric": "related_party_chars_yoy_pct",
+    "value": 71.4,
+    "display": "Related-party disclosure grew 71% in FY2020 (7,000 to 12,000 characters)",
+    "numbers": [
+     71.0,
+     2020.0,
+     7000.0,
+     12000.0
+    ]
+   }
+  ],
+  "thresholds": {
+   "audit_fee_growth": 0.3,
+   "revenue_coverage_ratio": 0.5,
+   "related_party_growth": 0.5,
+   "related_party_min_chars": 3000
+  }
+ },
+ "peer_result": {
+  "peer_list": [
+   {
+    "ticker": "SYNP0",
+    "name": "Synthetic Peer 0",
+    "cik": "0000001000",
+    "fiscal_year": 2020,
+    "tier": 4
+   },
+   {
+    "ticker": "SYNP1",
+    "name": "Synthetic Peer 1",
+    "cik": "0000001001",
+    "fiscal_year": 2020,
+    "tier": 4
+   },
+   {
+    "ticker": "SYNP2",
+    "name": "Synthetic Peer 2",
+    "cik": "0000001002",
+    "fiscal_year": 2020,
+    "tier": 4
+   },
+   {
+    "ticker": "SYNP3",
+    "name": "Synthetic Peer 3",
+    "cik": "0000001003",
+    "fiscal_year": 2020,
+    "tier": 4
+   },
+   {
+    "ticker": "SYNP4",
+    "name": "Synthetic Peer 4",
+    "cik": "0000001004",
+    "fiscal_year": 2020,
+    "tier": 4
+   },
+   {
+    "ticker": "SYNP5",
+    "name": "Synthetic Peer 5",
+    "cik": "0000001005",
+    "fiscal_year": 2020,
+    "tier": 4
+   }
+  ],
+  "metric_zscores": {
+   "gross_margin": {
+    "z_score": -1.8708,
+    "company_value": 0.36,
+    "peer_mean": 0.395,
+    "peer_std": 0.0187082869338697,
+    "n_peers": 6,
+    "flag": false,
+    "peer_pct": -8.9,
+    "direction": "below",
+    "interpretation": "Gross margin 36.0% vs peer mean 39.5% (z=-1.9)"
+   },
+   "dso": {
+    "z_score": 17.9065,
+    "company_value": 102.2,
+    "peer_mean": 41.0625,
+    "peer_std": 3.414262365431222,
+    "n_peers": 6,
+    "flag": true,
+    "peer_pct": 148.9,
+    "direction": "above",
+    "interpretation": "DSO 102 days vs peer mean 41 days (z=+17.9): above peers by more than 2 standard deviations"
+   },
+   "receivables_vs_revenue_growth": {
+    "z_score": 118.2104,
+    "company_value": 0.47902097902097895,
+    "peer_mean": -0.005823229021169459,
+    "peer_std": 0.004101537360300629,
+    "n_peers": 6,
+    "flag": true,
+    "peer_pct": 8326.0,
+    "direction": "above",
+    "interpretation": "Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations"
+   },
+   "ocf_to_revenue": {
+    "z_score": -13.8085,
+    "company_value": 0.03333333333333333,
+    "peer_mean": 0.1625,
+    "peer_std": 0.009354143466934849,
+    "n_peers": 6,
+    "flag": true,
+    "peer_pct": -79.5,
+    "direction": "below",
+    "interpretation": "OCF/revenue 3.3% vs peer mean 16.2% (z=-13.8): below peers by more than 2 standard deviations"
+   },
+   "debt_to_equity": {
+    "z_score": 0.6024,
+    "company_value": 0.4838709677419355,
+    "peer_mean": 0.47135025538315384,
+    "peer_std": 0.02078545965468396,
+    "n_peers": 6,
+    "flag": false,
+    "peer_pct": 2.7,
+    "direction": "above",
+    "interpretation": "Debt/equity 0.48x vs peer mean 0.47x (z=+0.6)"
+   },
+   "roa": {
+    "z_score": 14.6994,
+    "company_value": 0.2,
+    "peer_mean": 0.09000000000000001,
+    "peer_std": 0.007483314773547883,
+    "n_peers": 6,
+    "flag": true,
+    "peer_pct": 122.2,
+    "direction": "above",
+    "interpretation": "ROA 20.0% vs peer mean 9.0% (z=+14.7): above peers by more than 2 standard deviations"
+   }
+  },
+  "outlier_metrics": [
+   "dso",
+   "receivables_vs_revenue_growth",
+   "ocf_to_revenue",
+   "roa"
+  ],
+  "flags_fired": 4,
+  "flags_by_year": {
+   "2020": [
+    "peer.dso",
+    "peer.receivables_vs_revenue_growth",
+    "peer.ocf_to_revenue",
+    "peer.roa"
+   ]
+  },
+  "key_finding": "FY2020 peer outliers vs 6 SIC peers: DSO 102 days vs peer mean 41 days (z=+17.9); Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2); OCF/revenue 3.3% vs peer mean 16.2% (z=-13.8); ROA 20.0% vs peer mean 9.0% (z=+14.7)",
+  "severity": "High",
+  "focus_year": 2020,
+  "evidence": [
+   {
+    "flag": "peer.dso",
+    "year": 2020,
+    "metric": "dso",
+    "value": 102.2,
+    "display": "DSO 102 days vs peer mean 41 days (z=+17.9): above peers by more than 2 standard deviations",
+    "numbers": [
+     102.2,
+     41.0625,
+     3.414262365431222,
+     17.9065,
+     6
+    ],
+    "peer_pct": 148.9
+   },
+   {
+    "flag": "peer.receivables_vs_revenue_growth",
+    "year": 2020,
+    "metric": "receivables_vs_revenue_growth",
+    "value": 0.47902097902097895,
+    "display": "Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations",
+    "numbers": [
+     0.47902097902097895,
+     -0.005823229021169459,
+     0.004101537360300629,
+     118.2104,
+     6
+    ],
+    "peer_pct": 8326.0
+   },
+   {
+    "flag": "peer.ocf_to_revenue",
+    "year": 2020,
+    "metric": "ocf_to_revenue",
+    "value": 0.03333333333333333,
+    "display": "OCF/revenue 3.3% vs peer mean 16.2% (z=-13.8): below peers by more than 2 standard deviations",
+    "numbers": [
+     0.03333333333333333,
+     0.1625,
+     0.009354143466934849,
+     -13.8085,
+     6
+    ],
+    "peer_pct": -79.5
+   },
+   {
+    "flag": "peer.roa",
+    "year": 2020,
+    "metric": "roa",
+    "value": 0.2,
+    "display": "ROA 20.0% vs peer mean 9.0% (z=+14.7): above peers by more than 2 standard deviations",
+    "numbers": [
+     0.2,
+     0.09000000000000001,
+     0.007483314773547883,
+     14.6994,
+     6
+    ],
+    "peer_pct": 122.2
+   }
+  ],
+  "data_quality": {
+   "unavailable": {},
+   "n_peers": 6,
+   "unit": "USD",
+   "peer_year_offsets": [
+    0
+   ],
+   "min_peers": 3
+  },
+  "degraded": [],
+  "company_values": {
+   "gross_margin": 0.36,
+   "dso": 102.2,
+   "receivables_vs_revenue_growth": 0.47902097902097895,
+   "ocf_to_revenue": 0.03333333333333333,
+   "debt_to_equity": 0.4838709677419355,
+   "roa": 0.2
+  },
+  "unavailable": false
+ },
+ "temporal_result": {
+  "timeline": [
+   {
+    "year": 2016,
+    "suspicion_score": 0,
+    "flags_fired": 0,
+    "new_flags_this_year": [],
+    "risk_level": "Low",
+    "signal_change": "Stable",
+    "flags": [],
+    "score_breakdown": [],
+    "score_capped": false,
+    "data_available": true
+   },
+   {
+    "year": 2017,
+    "suspicion_score": 10,
+    "flags_fired": 1,
+    "new_flags_this_year": [
+     "language.hedging"
+    ],
+    "risk_level": "Low",
+    "signal_change": "Escalating",
+    "flags": [
+     "language.hedging"
+    ],
+    "score_breakdown": [
+     {
+      "flag": "language.hedging",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     }
+    ],
+    "score_capped": false,
+    "data_available": true
+   },
+   {
+    "year": 2018,
+    "suspicion_score": 60,
+    "flags_fired": 5,
+    "new_flags_this_year": [
+     "network.audit_fees",
+     "network.cfo_change",
+     "network.related_party",
+     "quantitative.dso_growth"
+    ],
+    "risk_level": "High",
+    "signal_change": "Escalating",
+    "flags": [
+     "language.hedging",
+     "network.audit_fees",
+     "network.cfo_change",
+     "network.related_party",
+     "quantitative.dso_growth"
+    ],
+    "score_breakdown": [
+     {
+      "flag": "language.hedging",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.audit_fees",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.cfo_change",
+      "base": 10,
+      "bonus": 10,
+      "points": 20
+     },
+     {
+      "flag": "network.related_party",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.dso_growth",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     }
+    ],
+    "score_capped": false,
+    "data_available": true
+   },
+   {
+    "year": 2019,
+    "suspicion_score": 100,
+    "flags_fired": 8,
+    "new_flags_this_year": [
+     "network.auditor_change",
+     "quantitative.accruals",
+     "quantitative.beneish",
+     "quantitative.revenue_quality"
+    ],
+    "risk_level": "Critical",
+    "signal_change": "Escalating",
+    "flags": [
+     "language.hedging",
+     "network.audit_fees",
+     "network.auditor_change",
+     "network.related_party",
+     "quantitative.accruals",
+     "quantitative.beneish",
+     "quantitative.dso_growth",
+     "quantitative.revenue_quality"
+    ],
+    "score_breakdown": [
+     {
+      "flag": "language.hedging",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.audit_fees",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.auditor_change",
+      "base": 10,
+      "bonus": 15,
+      "points": 25
+     },
+     {
+      "flag": "network.related_party",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.accruals",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.beneish",
+      "base": 10,
+      "bonus": 20,
+      "points": 30
+     },
+     {
+      "flag": "quantitative.dso_growth",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.revenue_quality",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     }
+    ],
+    "score_capped": true,
+    "data_available": true
+   },
+   {
+    "year": 2020,
+    "suspicion_score": 100,
+    "flags_fired": 14,
+    "new_flags_this_year": [
+     "language.new_legal",
+     "language.risk_factor_growth",
+     "network.cfo_change",
+     "peer.dso",
+     "peer.ocf_to_revenue",
+     "peer.receivables_vs_revenue_growth",
+     "peer.roa"
+    ],
+    "risk_level": "Critical",
+    "signal_change": "Stable",
+    "flags": [
+     "language.hedging",
+     "language.new_legal",
+     "language.risk_factor_growth",
+     "network.audit_fees",
+     "network.cfo_change",
+     "network.related_party",
+     "peer.dso",
+     "peer.ocf_to_revenue",
+     "peer.receivables_vs_revenue_growth",
+     "peer.roa",
+     "quantitative.accruals",
+     "quantitative.beneish",
+     "quantitative.dso_growth",
+     "quantitative.revenue_quality"
+    ],
+    "score_breakdown": [
+     {
+      "flag": "language.hedging",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "language.new_legal",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "language.risk_factor_growth",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.audit_fees",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "network.cfo_change",
+      "base": 10,
+      "bonus": 10,
+      "points": 20
+     },
+     {
+      "flag": "network.related_party",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "peer.dso",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "peer.ocf_to_revenue",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "peer.receivables_vs_revenue_growth",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "peer.roa",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.accruals",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.beneish",
+      "base": 10,
+      "bonus": 20,
+      "points": 30
+     },
+     {
+      "flag": "quantitative.dso_growth",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     },
+     {
+      "flag": "quantitative.revenue_quality",
+      "base": 10,
+      "bonus": 0,
+      "points": 10
+     }
+    ],
+    "score_capped": true,
+    "data_available": true
+   }
+  ],
+  "first_detection_year": 2018,
+  "first_detection_filing_date": null,
+  "first_detection_accession": null,
+  "filing_date_is_proxy": false,
+  "signal_trajectory": "Escalating",
+  "years_of_elevated_risk": 3,
+  "key_finding": "Suspicion first crossed 40 with escalating signals in FY2018 (score 60, new flags: network.audit_fees, network.cfo_change, network.related_party, quantitative.dso_growth). FY2020 scores 100 (Critical); trajectory Escalating; 3 year(s) at or above 40.",
+  "focus_year": 2020,
+  "suspicion_score": 100,
+  "focus_signal_change": "Stable",
+  "flags_by_year": {
+   "2016": [],
+   "2017": [
+    "language.hedging"
+   ],
+   "2018": [
+    "language.hedging",
+    "network.audit_fees",
+    "network.cfo_change",
+    "network.related_party",
+    "quantitative.dso_growth"
+   ],
+   "2019": [
+    "language.hedging",
+    "network.audit_fees",
+    "network.auditor_change",
+    "network.related_party",
+    "quantitative.accruals",
+    "quantitative.beneish",
+    "quantitative.dso_growth",
+    "quantitative.revenue_quality"
+   ],
+   "2020": [
+    "language.hedging",
+    "language.new_legal",
+    "language.risk_factor_growth",
+    "network.audit_fees",
+    "network.cfo_change",
+    "network.related_party",
+    "peer.dso",
+    "peer.ocf_to_revenue",
+    "peer.receivables_vs_revenue_growth",
+    "peer.roa",
+    "quantitative.accruals",
+    "quantitative.beneish",
+    "quantitative.dso_growth",
+    "quantitative.revenue_quality"
+   ]
+  },
+  "inputs_available": {
+   "quantitative": true,
+   "language": true,
+   "network": true,
+   "peer": true
+  },
+  "weights": {
+   "flag": 10,
+   "zero_weight_flags": [
+    "network.ceo_change"
+   ],
+   "bonuses": {
+    "quantitative.beneish": 20,
+    "quantitative.altman_distress": 15,
+    "network.auditor_change": 15,
+    "network.going_concern": 25,
+    "network.cfo_change": 10
+   },
+   "cap": 100
+  },
+  "notes": [
+   "quantitative.altman_distress is a business-distress signal, not a manipulation signal (kept per spec).",
+   "Peer flags exist only for the focus year and are attached to it."
+  ],
+  "data_quality": {
+   "unavailable": {}
+  },
+  "degraded": [
+   "temporal: no filing date found for FY2018"
+  ]
+ },
+ "forensic_timeline": [
+  {
+   "year": 2016,
+   "suspicion_score": 0,
+   "flags_fired": 0,
+   "new_flags_this_year": [],
+   "risk_level": "Low",
+   "signal_change": "Stable",
+   "flags": [],
+   "score_breakdown": [],
+   "score_capped": false,
+   "data_available": true
+  },
+  {
+   "year": 2017,
+   "suspicion_score": 10,
+   "flags_fired": 1,
+   "new_flags_this_year": [
+    "language.hedging"
+   ],
+   "risk_level": "Low",
+   "signal_change": "Escalating",
+   "flags": [
+    "language.hedging"
+   ],
+   "score_breakdown": [
+    {
+     "flag": "language.hedging",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    }
+   ],
+   "score_capped": false,
+   "data_available": true
+  },
+  {
+   "year": 2018,
+   "suspicion_score": 60,
+   "flags_fired": 5,
+   "new_flags_this_year": [
+    "network.audit_fees",
+    "network.cfo_change",
+    "network.related_party",
+    "quantitative.dso_growth"
+   ],
+   "risk_level": "High",
+   "signal_change": "Escalating",
+   "flags": [
+    "language.hedging",
+    "network.audit_fees",
+    "network.cfo_change",
+    "network.related_party",
+    "quantitative.dso_growth"
+   ],
+   "score_breakdown": [
+    {
+     "flag": "language.hedging",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.audit_fees",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.cfo_change",
+     "base": 10,
+     "bonus": 10,
+     "points": 20
+    },
+    {
+     "flag": "network.related_party",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.dso_growth",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    }
+   ],
+   "score_capped": false,
+   "data_available": true
+  },
+  {
+   "year": 2019,
+   "suspicion_score": 100,
+   "flags_fired": 8,
+   "new_flags_this_year": [
+    "network.auditor_change",
+    "quantitative.accruals",
+    "quantitative.beneish",
+    "quantitative.revenue_quality"
+   ],
+   "risk_level": "Critical",
+   "signal_change": "Escalating",
+   "flags": [
+    "language.hedging",
+    "network.audit_fees",
+    "network.auditor_change",
+    "network.related_party",
+    "quantitative.accruals",
+    "quantitative.beneish",
+    "quantitative.dso_growth",
+    "quantitative.revenue_quality"
+   ],
+   "score_breakdown": [
+    {
+     "flag": "language.hedging",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.audit_fees",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.auditor_change",
+     "base": 10,
+     "bonus": 15,
+     "points": 25
+    },
+    {
+     "flag": "network.related_party",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.accruals",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.beneish",
+     "base": 10,
+     "bonus": 20,
+     "points": 30
+    },
+    {
+     "flag": "quantitative.dso_growth",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.revenue_quality",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    }
+   ],
+   "score_capped": true,
+   "data_available": true
+  },
+  {
+   "year": 2020,
+   "suspicion_score": 100,
+   "flags_fired": 14,
+   "new_flags_this_year": [
+    "language.new_legal",
+    "language.risk_factor_growth",
+    "network.cfo_change",
+    "peer.dso",
+    "peer.ocf_to_revenue",
+    "peer.receivables_vs_revenue_growth",
+    "peer.roa"
+   ],
+   "risk_level": "Critical",
+   "signal_change": "Stable",
+   "flags": [
+    "language.hedging",
+    "language.new_legal",
+    "language.risk_factor_growth",
+    "network.audit_fees",
+    "network.cfo_change",
+    "network.related_party",
+    "peer.dso",
+    "peer.ocf_to_revenue",
+    "peer.receivables_vs_revenue_growth",
+    "peer.roa",
+    "quantitative.accruals",
+    "quantitative.beneish",
+    "quantitative.dso_growth",
+    "quantitative.revenue_quality"
+   ],
+   "score_breakdown": [
+    {
+     "flag": "language.hedging",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "language.new_legal",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "language.risk_factor_growth",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.audit_fees",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "network.cfo_change",
+     "base": 10,
+     "bonus": 10,
+     "points": 20
+    },
+    {
+     "flag": "network.related_party",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "peer.dso",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "peer.ocf_to_revenue",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "peer.receivables_vs_revenue_growth",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "peer.roa",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.accruals",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.beneish",
+     "base": 10,
+     "bonus": 20,
+     "points": 30
+    },
+    {
+     "flag": "quantitative.dso_growth",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    },
+    {
+     "flag": "quantitative.revenue_quality",
+     "base": 10,
+     "bonus": 0,
+     "points": 10
+    }
+   ],
+   "score_capped": true,
+   "data_available": true
+  }
+ ],
+ "suspicion_score": 100,
+ "first_detection_year": 2018,
+ "first_detection_filing_date": null,
+ "risk_grade": "High",
+ "grade_rationale": "High rule fired: 4 agents at High severity (3+ agents high); Jev confidence is unavailable, so Critical cannot be reached and the grade is capped at High (agents flagging (Medium/High severity): 4 of 4; agents at High severity: 4; temporal escalation: yes).",
+ "smoking_guns": [
+  "In FY2020, beneish_m_score showed Beneish M-Score was -1.16 in FY2020, above the -1.78 manipulation threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets..",
+  "In FY2020, receivables_vs_revenue_growth showed Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations, which is 8326% above the peer group average.",
+  "In FY2020, hedging_ratio showed Hedging-word ratio rose 66% to 4.3% of MD&A words in FY2020."
+ ],
+ "smoking_gun_evidence": [
+  {
+   "flag": "quantitative.beneish",
+   "year": 2020,
+   "metric": "beneish_m_score",
+   "value": -1.1608847983296708,
+   "display": "Beneish M-Score was -1.16 in FY2020, above the -1.78 manipulation threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets.",
+   "numbers": [
+    -1.16,
+    -1.78,
+    13.6,
+    61.5,
+    37.9,
+    36.0,
+    -1.9,
+    16.7
+   ],
+   "signal_type": "manipulation",
+   "imputed": [],
+   "agent": "quantitative",
+   "text": "In FY2020, beneish_m_score showed Beneish M-Score was -1.16 in FY2020, above the -1.78 manipulation threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets..",
+   "pattern": null
+  },
+  {
+   "flag": "peer.receivables_vs_revenue_growth",
+   "year": 2020,
+   "metric": "receivables_vs_revenue_growth",
+   "value": 0.47902097902097895,
+   "display": "Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations",
+   "numbers": [
+    0.47902097902097895,
+    -0.005823229021169459,
+    0.004101537360300629,
+    118.2104,
+    6
+   ],
+   "peer_pct": 8326.0,
+   "agent": "peer",
+   "text": "In FY2020, receivables_vs_revenue_growth showed Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations, which is 8326% above the peer group average.",
+   "pattern": null
+  },
+  {
+   "flag": "language.hedging",
+   "year": 2020,
+   "metric": "hedging_ratio",
+   "value": 0.042787286063569685,
+   "display": "Hedging-word ratio rose 66% to 4.3% of MD&A words in FY2020",
+   "numbers": [
+    66,
+    4.3,
+    2020
+   ],
+   "agent": "language",
+   "text": "In FY2020, hedging_ratio showed Hedging-word ratio rose 66% to 4.3% of MD&A words in FY2020.",
+   "pattern": null
+  }
+ ],
+ "final_narrative": "Overall assessment: SYNTH Corp (synthetic demo data, not a real company) receives a High accounting-manipulation risk grade for FY2020. High rule fired: 4 agents at High severity (3+ agents high); Jev confidence is unavailable, so Critical cannot be reached and the grade is capped at High (agents flagging (Medium/High severity): 4 of 4; agents at High severity: 4; temporal escalation: yes). Evidence summary: quantitative agent severity High (Beneish M-Score -1.16 in FY2020 is in the manipulator zone (> -1.78)); language agent severity High (A materially new legal proceeding appeared in the FY2020 Legal Proceedings section (plus 2 other language flags)); network agent severity High (CFO changed from Lee Moran to Kim Alvarez in FY2020 (plus 2 other network flags)); peer agent severity High (FY2020 peer outliers vs 6 SIC peers: DSO 102 days vs peer mean 41 days (z=+17.9); Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2); OCF/revenue 3.3% vs peer mean 16.2% (z=-13.8); ROA 20.0% vs peer mean 9.0% (z=+14.7)). Limitations: Jev confidence scoring was unavailable, so agent findings carry no independent confidence weighting; some metrics could not be computed (specificity_scores.2016, specificity_scores.2017, specificity_scores.2018, specificity_scores.2019 and specificity_scores.2020); the Critical grade was blocked because Jev confidence was unavailable. These are statistical risk indicators, not proof of misconduct.\n\nThe most significant risk factors are: In FY2020, beneish_m_score showed Beneish M-Score was -1.16 in FY2020, above the -1.78 manipulation threshold. Revenue grew 13.6% while net receivables grew 61.5% in FY2020 - receivables outpacing sales is the classic channel-stuffing / premature-revenue-recognition pattern; gross margin moved from 37.9% to 36.0% (-1.9 percentage points); net income less operating cash flow was 16.7% of total assets.. In FY2020, receivables_vs_revenue_growth showed Receivables growth minus revenue growth +47.9 pp vs peer mean -0.6 pp (z=+118.2): above peers by more than 2 standard deviations, which is 8326% above the peer group average. In FY2020, hedging_ratio showed Hedging-word ratio rose 66% to 4.3% of MD&A words in FY2020.\n\nWhat to watch: in the next filings monitor hedging and qualification language in MD&A in the next filing, developments in newly disclosed legal proceedings, newly added risk-factor disclosures, audit-fee changes relative to business growth and any non-audit fee increases, further finance-leadership turnover and the circumstances of the CFO departure, related-party transaction volume and counterparties in the next filing, whether the gap between net income and operating cash flow narrows, the Beneish M-Score components in the next filing, especially receivables-to-sales, gross margin and asset-quality indices, days sales outstanding and receivables ageing versus revenue growth in the next quarters and whether operating cash flow converges back toward net income. Escalation would be signalled by additional flags appearing; resolution by these indicators normalising. The temporal agent reports a Escalating signal trajectory.",
+ "jev_scores": {
+  "quantitative": {
+   "evidence_strength": "Strong",
+   "confidence_score": 86.0,
+   "material_change": true,
+   "jev_latency_ms": 420,
+   "available": true,
+   "error": null,
+   "model": "SYNTHETIC"
+  },
+  "language": {
+   "evidence_strength": "Suggestive",
+   "confidence_score": 58.0,
+   "material_change": true,
+   "jev_latency_ms": 420,
+   "available": true,
+   "error": null,
+   "model": "SYNTHETIC"
+  },
+  "network": {
+   "evidence_strength": "Definitive",
+   "confidence_score": 92.0,
+   "material_change": false,
+   "jev_latency_ms": 420,
+   "available": true,
+   "error": null,
+   "model": "SYNTHETIC"
+  },
+  "peer": {
+   "evidence_strength": "Insufficient",
+   "confidence_score": 31.0,
+   "material_change": false,
+   "jev_latency_ms": 420,
+   "available": true,
+   "error": null,
+   "model": "SYNTHETIC"
+  },
+  "temporal": {
+   "evidence_strength": "Strong",
+   "confidence_score": 77.0,
+   "material_change": true,
+   "jev_latency_ms": 420,
+   "available": true,
+   "error": null,
+   "model": "SYNTHETIC"
+  }
+ },
+ "jev_available": true,
+ "agent_severity": {
+  "quantitative": "High",
+  "language": "High",
+  "network": "High",
+  "peer": "High"
+ },
+ "_fixture_note": "SYNTHETIC: invented inputs run through the real agents (no LLM, no Jev). Not a real company. Jev scores in this variant are INVENTED for rendering tests."
+}

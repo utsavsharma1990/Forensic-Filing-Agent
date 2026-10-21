@@ -1,0 +1,99 @@
+[
+ {
+  "node": "fetch_data",
+  "status": "start",
+  "message": "Fetching SEC EDGAR data...",
+  "elapsed_ms": 6
+ },
+ {
+  "node": "fetch_data",
+  "status": "done",
+  "message": "Fetching SEC EDGAR data...",
+  "elapsed_ms": 666,
+  "detail": "5 fiscal years, 6 texts, 8 peers"
+ },
+ {
+  "node": "language",
+  "status": "start",
+  "message": "Analyzing filing language...",
+  "elapsed_ms": 674
+ },
+ {
+  "node": "network",
+  "status": "start",
+  "message": "Checking auditor and executive history...",
+  "elapsed_ms": 674
+ },
+ {
+  "node": "peer",
+  "status": "start",
+  "message": "Comparing against peer group...",
+  "elapsed_ms": 674
+ },
+ {
+  "node": "quantitative",
+  "status": "start",
+  "message": "Running quantitative forensics...",
+  "elapsed_ms": 674
+ },
+ {
+  "node": "quantitative",
+  "status": "done",
+  "message": "Running quantitative forensics...",
+  "elapsed_ms": 884,
+  "detail": "DSO rose from 21.4 to 26.2 days (+22.3%) in FY2021, above the +20% threshold."
+ },
+ {
+  "node": "network",
+  "status": "done",
+  "message": "Checking auditor and executive history...",
+  "elapsed_ms": 2142,
+  "detail": "CFO changed from Luca Maestri to Kevan Parekh in FY2025."
+ },
+ {
+  "node": "peer",
+  "status": "done",
+  "message": "Comparing against peer group...",
+  "elapsed_ms": 3781,
+  "detail": "FY2025 peer outliers vs 8 SIC peers: ROA 31.2% vs peer mean 5.3% (z=+8.1)"
+ },
+ {
+  "node": "language",
+  "status": "done",
+  "message": "Analyzing filing language...",
+  "elapsed_ms": 12372,
+  "detail": "A materially new legal proceeding appeared in the FY2025 Legal Proceedings section (plus 1 other language flag)."
+ },
+ {
+  "node": "temporal",
+  "status": "start",
+  "message": "Building temporal intelligence...",
+  "elapsed_ms": 12376
+ },
+ {
+  "node": "temporal",
+  "status": "done",
+  "message": "Building temporal intelligence...",
+  "elapsed_ms": 12378,
+  "detail": "Suspicion first crossed 40 with escalating signals in FY2025 (score 50, new flags: network.cfo_change, peer.roa, filing dated 2025-10-31). FY2025 scores 50 (Medium); trajectory Escalating; 1 year(s) at or above 40."
+ },
+ {
+  "node": "synthesis",
+  "status": "start",
+  "message": "Synthesizing final verdict...",
+  "elapsed_ms": 12380
+ },
+ {
+  "node": "jev",
+  "status": "jev",
+  "message": "Running Jev confidence scoring...",
+  "elapsed_ms": 12384
+ },
+ {
+  "node": "synthesis",
+  "status": "done",
+  "message": "Synthesizing final verdict...",
+  "elapsed_ms": 12384,
+  "detail": "Medium rule fired: 1 agent(s) flagging without the conditions for High (agents flagging (Medium/High severity): 1 of 4; agents at High severity: 0; temporal escalation: yes)."
+ }
+]
