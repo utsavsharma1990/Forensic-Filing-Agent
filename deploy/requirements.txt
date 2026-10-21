@@ -1,0 +1,6 @@
+# Minimal runtime for the read-only DEMO (deploy/streamlit_demo.py). Majors match docs/requirements.lock.txt.
+# No LLM / SEC / scheduler / spaCy packages: demo mode never imports them.
+streamlit>=1.35.0
+plotly>=5.20.0
+pandas>=2.0.0
+numpy>=1.26.0

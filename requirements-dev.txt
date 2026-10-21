@@ -1,0 +1,9 @@
+-r requirements.txt
+pytest>=8.0.0
+# tests/test_jev_scorer.py imports httpx2 directly (installed transitively by typesafe-sdk; pinned here to be explicit)
+httpx2>=2.0
+# optional: tests/test_evaluator.py cross-checks wilson_interval against statsmodels if present (silently skipped otherwise)
+# statsmodels>=0.14
+
+# scripts/make_readme_figures.py (README charts)
+matplotlib>=3.8
